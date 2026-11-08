@@ -7,7 +7,7 @@ print("Reflection:")
 
 #1. I can use .git() if i am not sure the key exist in the working dictionary.
 
-#2.
+#2. Exersise 8 reminds me of sumif in exel. python would be better for this because it is more flexible and can handle larger datasets.
 
 print("Exercise 1:")
 
