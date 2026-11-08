@@ -1,4 +1,5 @@
 
+import email
 from os import name
 
 
@@ -9,7 +10,26 @@ print("Reflection:")
 #2.
 
 print("Exercise 1:")
-dict('name', )
+
+#Customer dictionary
+
+customer = {
+    "name:": "bob",
+    "email:": "bob@gmail.com",
+    "tier:": "gold",
+    "ytd_spent:": 3200,
+}
+
+#Print induvidual results
+
+print(customer["name:"])
+print(customer["email:"])
+print(customer["tier:"])
+print(customer["ytd_spent:"])
+
+print(customer)
+
+
 
 print("Exercise 4:")
 
@@ -39,10 +59,28 @@ customer = [
 
 
 print("Exercise 7:")
-catalog = [
+catalog = {
     "widget A": {"price": 9.99, "stock": 150},
     "gadget C": {"price": 49.99, "stock": 8}
-]
+}
 for product_name, product_details in catalog.items():
     if product_details["stock"] < 10:
         print(f"LOW STOCK: {product_name} - Only {product_details['stock']} left in stock!")
+
+print("Exercise 8:")
+transactions = [
+    {"region": "south", "amount": 300},
+    {"region": "north", "amount": 150},
+    {"region": "south", "amount": 200},
+]
+
+sales_by_region = {}
+for sale in transactions:
+    region = sale["region"]
+    amount = sale["amount"]
+    sales_by_region[region] = sales_by_region.get(region, 0) + amount
+
+print(sales_by_region)
+
+for region in sorted(sales_by_region.keys()):
+    print(f"{region}: ${sales_by_region[region]:.2f}")
