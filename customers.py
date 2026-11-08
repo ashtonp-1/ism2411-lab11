@@ -48,7 +48,7 @@ try:
     print(customer["email:"])
 except KeyError:
     print("KeyError: email does not exist")
-    
+
 
 
 print("Exercise 4:")
@@ -63,12 +63,12 @@ tier_discounts = {
     "silver": 0.05,
     "gold": 0.10,
     "platinum": 0.15
-}
+}   
 
 purchase = 200 
-discount_rate = tier_discounts.get(customer['tier'], 0)
+discount_rate = tier_discounts.get(customer['tier:'], 0)
 final_price = purchase * (1 - discount_rate)
-print(f"Tier: {customer['tier']}, Discount Rate: {discount_rate}, Final Price: {final_price}")
+print(f"Tier: {customer['tier:']}, Discount Rate: {discount_rate}, Final Price: {final_price}")
 
 print("Exercise 6:")
 customer = [
