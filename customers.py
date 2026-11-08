@@ -29,6 +29,26 @@ print(customer["ytd_spent:"])
 
 print(customer)
 
+print("Exercise 2:")
+
+customer["phone:"] = "555-555-5555"
+print(customer)
+
+customer["tier:"] = "platinum"
+print(customer)
+
+del customer["email:"]
+print(customer)
+
+print("Exercise 3:")
+
+print(customer.get("email:", "no email on file"))
+
+try:
+    print(customer["email:"])
+except KeyError:
+    print("KeyError: email does not exist")
+    
 
 
 print("Exercise 4:")
