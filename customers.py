@@ -5,7 +5,7 @@ from os import name
 
 print("Reflection:")
 
-#1.
+#1. I can use .git() if i am not sure the key exist in the working dictionary.
 
 #2.
 
